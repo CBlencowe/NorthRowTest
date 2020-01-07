@@ -19,9 +19,13 @@ Step two:
 Using terminal cd to the project.
 Run command “mvn package”.
 Run command “mvn clean spring-boot:run”
-
 ____________________________________________________
 Step three: 
+
+Set up the application for RESTful use on a Tomcat server as a WAR file.
+Find the main class file (denoted by @SpringBootApplication) and extend it by SpringBootServletInitializer
+____________________________________________________
+Step four: 
 
 Add the files that will contain the entity, repository and controller (or group them together)
 Add the classes for the entity, repository and controller
@@ -38,6 +42,5 @@ controller
     - Don't forget the @RestController anotation
     - Set the request mapping to class name (optional)
     - Add the relevent CRUD and SEARCH methods
-    
 ____________________________________________________
-Step four: 
+Step five: 
