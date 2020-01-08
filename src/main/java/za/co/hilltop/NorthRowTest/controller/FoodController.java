@@ -71,6 +71,6 @@ public class FoodController {
 	// SEARCH all by condition (name, type or date)
 	@GetMapping("/search/{condition}")
 	List<Food> search(@PathVariable String condition) {
-		return foodRepo.findByConditions(condition);
+		return foodRepo.findByConditions(condition); 
 	}
 }

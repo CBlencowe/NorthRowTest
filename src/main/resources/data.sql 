@@ -1,0 +1,15 @@
+DROP TABLE IF EXISTS food;
+ 
+CREATE TABLE food (
+  id INT VARCHAR(255) PRIMARY KEY NOT NULL,
+  name VARCHAR(255),
+  quantity DOUBLE,
+  type VARCHAR(255),
+  createddate DATETIME
+);
+ 
+INSERT INTO food (name, quantity, type, createddate) VALUES
+  ('Pepper', 99, 'Veg', '2020-01-07 21:34:44'),
+  ('Apple', 30, 'Fruit', '2020-01-07 21:34:44'),
+  ('Litchi', 77, 'Fruit', '2020-01-07 21:34:44'),
+  ('Orange', 88, 'Fruit', '2020-01-07 21:34:44');

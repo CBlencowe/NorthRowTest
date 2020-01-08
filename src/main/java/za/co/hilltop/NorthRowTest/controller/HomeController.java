@@ -15,7 +15,6 @@ public class HomeController {
 	@RequestMapping("/")
 	public String index() {
 		return "App is running";
-		//return "layout";
 	}
 
 }
