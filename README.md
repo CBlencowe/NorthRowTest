@@ -44,3 +44,14 @@ controller
     - Add the relevent CRUD and SEARCH methods
 ____________________________________________________
 Step five: 
+
+Move from SQL to H2 data storage
+    - Something I hadn’t done before
+    - I used my domain to host a database for testing, as I knew this worked
+    - H2 was alarmingly simple to use and all the configuring was in one line in the application.properties file
+    - “spring.datasource.url=jdbc:h2:mem:test;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;MODE=MYSQL"
+
+____________________________________________________
+Step six: 
+
+Implement API key on SpringSecurity
