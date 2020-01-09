@@ -13,7 +13,6 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		
 		//This is for the end point
 		http.httpBasic().and().authorizeRequests()
 			.antMatchers(HttpMethod.GET, "/**").hasRole("ADMIN")
